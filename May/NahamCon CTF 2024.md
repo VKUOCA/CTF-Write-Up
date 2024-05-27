@@ -120,7 +120,7 @@ for f in files:
 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/2ec77081-4f28-4595-a6d8-96812ea5991d)
 
-<img width="511" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/b41321bd-4290-402c-9bc0-728c59745b60">
+<img width="376" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/20e6bf5e-53e7-48ea-9864-2a615061c7a5">
 <img width="448" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/ac1467e4-8759-434f-adf5-faf3d8246fe4">
 <img width="400" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/90b695b2-9b51-4e42-a930-8097bc6e2f02">
 <img width="431" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/deda1bb3-7236-4f22-86c5-19b5ee979424">
