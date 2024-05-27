@@ -7,6 +7,7 @@
 
 > 풀이
 <br>
+
 먼저, 주어진 파일을 압축 해제한 후 FTK Imager를 통해 해당 파일을 열어보았다. 
 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/d3966b5c-b6d7-44ef-9ef8-abbe7fe1f2f3)
@@ -67,6 +68,9 @@ https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volu
 - 첨부 파일: 1337-malware.pcapng
 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/2f585e61-7ee3-4d3d-a39f-61537d0047a8)
+
+> 풀이
+<br>
 
 wireshark를 사용해 주어진 pcap 파일 실행 해보면,
 [File] - [Export Objects] - [HTTP] 기능을 통해 python 파일 하나가 존재하는걸 확인할 수 있었다. 
