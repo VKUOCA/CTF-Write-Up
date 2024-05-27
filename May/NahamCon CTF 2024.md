@@ -64,7 +64,15 @@ https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volu
 
 **Forensics:1337 Malware-Easy**
 <br>
-- 첨부 파일: breath-of-the-wild.7z
+- 첨부 파일: 1337-malware.pcapng
+
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/2f585e61-7ee3-4d3d-a39f-61537d0047a8)
+
+wireshark를 사용해 주어진 pcap 파일 실행 해보면, Object를 통해 python 파일 하나가 존재하는걸 확인할 수 있었다. 
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/670cb06b-e176-4f07-96f5-b048bb958286)
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/d5dfb54d-df96-4b38-9688-bc348907b747)
+
+
 
 
 
