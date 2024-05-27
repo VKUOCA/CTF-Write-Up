@@ -62,6 +62,10 @@ https://keys.direct/blogs/blog/how-to-mount-a-drive-in-windows-10
 https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volume-and-isnt-in-a-compressed-folder-or-volume-error/
 ```
 
+**Forensics:1337 Malware-Easy**
+<br>
+- 첨부 파일: breath-of-the-wild.7z
+
 
 
 
