@@ -21,7 +21,11 @@
 ＇Vera Crypt＇프로그램 사용해서 4~5번 마운트를 진행해보았지만 어떠한 정보를 얻을 수 없었다... 내가 마운트를 잘못 했나? 다른 방법을 찾아서 마운트를 다시 진행해보았다. 아! window에 파일을 마운트 하는 방법이 있었다.
 
 다시 시도!
-![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/df5339ee-97ee-4d4c-9afe-532224549c71)
+
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/658e13d5-0bd8-4060-8a3b-8bc279111f2f)
+
+
+
 
 
 
