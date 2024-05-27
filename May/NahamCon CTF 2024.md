@@ -50,9 +50,11 @@ HostUrl=https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpaper
 
 ```
 
-HTML 문자 참조로 인코딩된 문자열을 디코딩하면 원래 문자열로 변환돼 플래그 확인!!!!!!!!!!
+HTML 문자 참조로 인코딩된 문자열을 디코딩하면 원래 문자열로 변환 되면서 플래그 확인!!!!!!!!!!
 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/6a4572a5-269b-45f8-b4f3-66d6ce82bfa8)
+
+💡 flag{83f2b0a8ce39f2e5ba1d6c70e97f291e}
 
 
 
