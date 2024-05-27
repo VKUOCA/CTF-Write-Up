@@ -56,24 +56,11 @@ HTML 문자 참조로 인코딩된 문자열을 디코딩하면 원래 문자열
 
 💡 flag{83f2b0a8ce39f2e5ba1d6c70e97f291e}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-참고 링크
+```
+> 참고 링크
 https://keys.direct/blogs/blog/how-to-mount-a-drive-in-windows-10
+https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volume-and-isnt-in-a-compressed-folder-or-volume-error/
+```
 
 
 
