@@ -22,7 +22,22 @@
 
 다시 시도!
 
-![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/658e13d5-0bd8-4060-8a3b-8bc279111f2f)
+<img width="410" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/4729b759-c442-44e3-936d-000553033beb">
+<img width="656" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/cb9e6363-86fd-4000-8346-e6d157272e28">
+
+마운트를 진행해주고, 암호를 입력하라는 창에 문제에서 제시된 'videogames'입력 해주면 된다. 
+
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/3d2f7efc-33e2-4b9e-826f-0a28711df886)
+
+여러 이미지가 존재하는데.. 자세한건 Autopsy 프로그램 사용해서 다운로드를 진행한 URL 알아봐야 할 것 같다. 마지막 스터디에서 배운 프로그램을 여기서 쓰네 ㅎㅎ
+
+<img width="917" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/3c83b340-0857-40d8-a2eb-5c1a9345e6c0">
+
+경로가 다 같은 걸로 확인이 된다? 아..! 아니네 아래로 스크롤을 내려보면 URL이 다른 하나가 존재한다. 
+
+![image](https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/583d4b6f-1ac2-4889-a83f-1510729c741b)
+
+'HostUrl=https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/&#102;&%23108;&%2397;&%23103;&%23123;&%2356;&%2351;&%23102;&%2350;&%2398;&%2348;&%2397;&%2356;&%2399;&%23101;&%2351;&%2357;&%23102;&%2350;&%23101;&%2353;&%2398;&%2397;&%2349;&%23100;&%2354;&%2399;&%2355;&%2348;&%23101;&%2357;&%2355;&%23102;&%2350;&%2357;&%2349;&%23101;&%23125;'
 
 
 
