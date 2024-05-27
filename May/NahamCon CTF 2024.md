@@ -59,8 +59,9 @@ HTML 문자 참조로 인코딩된 문자열을 디코딩하면 원래 문자열
 
 ```
 > 참고 링크
-https://keys.direct/blogs/blog/how-to-mount-a-drive-in-windows-10
-https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volume-and-isnt-in-a-compressed-folder-or-volume-error/
+How to Mount a Drive in Windows 10 . (n.d.). https://keys.direct/blogs/blog/how-to-mount-a-drive-in-windows-10.
+오류 해결 . (2020). https://www.remorecover.com/blog/ko/ko-fix-make-sure-the-file-is-in-an-ntfs-volume-and-isnt-in-a-compressed-folder-or-volume-error/.
+
 ```
 
 **Forensics:1337 Malware-Easy**
@@ -134,11 +135,11 @@ for f in files:
 
 다른 것들은 무슨 내용인지 알겠는데 /id_rsa가 뭔지 모르겠다. 구글링을 해보니 "id_rsa"라는 이름의 SSH 개인 키 파일인 것 같다. 
 
-이 SSH 개인 키 파일을 사용해 각 파일을 추출을 해 문제를 풀어야 되는거 같은데 도저히 풀리지 않는다. 
+SSH 개인 키 파일을 사용해 각 파일을 추출을 해 문제를 풀어야 되는거 같은데 도저히 풀리지 않는다. 
 
--Sending:  /home/davey/Documents/resources .zip
--Sending:  /home/davey/Documents/ecorp.png 
-=Sending:  /home/davey/Documents/Welcome Aboard.pdf
+- Sending:  /home/davey/Documents/resources .zip
+- Sending:  /home/davey/Documents/ecorp.png 
+- Sending:  /home/davey/Documents/Welcome Aboard.pdf
 
 
 
