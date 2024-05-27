@@ -126,6 +126,16 @@ for f in files:
 <img width="431" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/deda1bb3-7236-4f22-86c5-19b5ee979424">
 <img width="432" alt="image" src="https://github.com/VKUOCA/CTF-Write-Up/assets/128664025/7bca7a49-5f7a-45ca-951f-b42d0e9567d9">
 
+음... 단서가 될 만한 것들을 정리해보았다. 
+
+다른 것들은 무슨 내용인지 알겠는데 /id_rsa가 뭔지 모르겠다. 구글링을 해보니 "id_rsa"라는 이름의 SSH 개인 키 파일인 것 같다. 
+
+이 SSH 개인 키 파일을 사용해 각 파일을 추출을 해 문제를 풀어야 되는거 같은데 도저히 풀리지 않는다. 
+
+-Sending:  /home/davey/Documents/resources .zip
+-Sending:  /home/davey/Documents/ecorp.png 
+=Sending:  /home/davey/Documents/Welcome Aboard.pdf
+
 
 
 
