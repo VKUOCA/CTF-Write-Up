@@ -14,21 +14,17 @@
 
 ```
 import random  
-<br>
 from string import ascii_lowercase, ascii_uppercase, digits  
 
 알파벳, 소문자, 대문자, 숫자를 포함하는 문자열을 생성
-<br>
 words = ascii_uppercase + ascii_lowercase + digits
 
 비즈네르 암호를 구현하는 클래스를 정의
-<br>
 class Vigenere:
     def __init__(self, key):
         self._key = key
 
     문자를 지정된 거리만큼 이동시키는 함수를 정의
-    <br>
     def shift(self, a, d):
         if a not in words:
             return a
@@ -36,7 +32,6 @@ class Vigenere:
         return words[(index + d) % len(words)]
 
     평문을 암호화하는 함수를 정의
-    <br>
     def encrypt(self, pt):
         ct = ""
         for i in range(len(pt)):
@@ -44,7 +39,6 @@ class Vigenere:
         return ct
 
     암호문을 평문으로 복호화하는 함수를 정의
-    <br>
     def decrypt(self, ct):
         pt = ""
         for i in range(len(ct)):
@@ -52,7 +46,6 @@ class Vigenere:
         return pt
 
 주요 기능을 실행하는 함수
-<br>
 def main():
     16개의 난수로 구성된 키를 생성
     <br>
@@ -64,13 +57,10 @@ def main():
         
     assert "Vigenere" and "cipher" in secret
     생성한 키를 사용하여 Vigenere 객체를 생성
-    <br>
     cipher = Vigenere(key)
     평문을 암호화
-    <br>
     secret_enc = cipher.encrypt(secret)
     암호화된 결과를 출력
-    <br>
     print(f"my encrypted sentence > {secret_enc}")
 
 if __name__ == '__main__':
