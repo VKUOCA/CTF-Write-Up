@@ -12,7 +12,7 @@
 
 먼저, 코드를 살펴보면
 
-'''
+```
 import random  
 <br>
 from string import ascii_lowercase, ascii_uppercase, digits  
@@ -64,16 +64,19 @@ def main():
         
     assert "Vigenere" and "cipher" in secret
     생성한 키를 사용하여 Vigenere 객체를 생성
+    <br>
     cipher = Vigenere(key)
     평문을 암호화
+    <br>
     secret_enc = cipher.encrypt(secret)
     암호화된 결과를 출력
+    <br>
     print(f"my encrypted sentence > {secret_enc}")
 
 if __name__ == '__main__':
     main()
 
-'''
+```
 
 비즈네르 암호를 사용하여 주어진 평문을 암호화하는 코드인데.... output.txt도 살펴봐야 할 것 같다. 
 
