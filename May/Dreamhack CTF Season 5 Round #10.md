@@ -16,36 +16,36 @@
 import random  
 from string import ascii_lowercase, ascii_uppercase, digits  
 
-// 알파벳, 소문자, 대문자, 숫자를 포함하는 문자열을 생성
+알파벳, 소문자, 대문자, 숫자를 포함하는 문자열을 생성
 words = ascii_uppercase + ascii_lowercase + digits
 
-# 비즈네르 암호를 구현하는 클래스를 정의
+비즈네르 암호를 구현하는 클래스를 정의
 class Vigenere:
     def __init__(self, key):
         self._key = key
 
-    # 문자를 지정된 거리만큼 이동시키는 함수를 정의
+    문자를 지정된 거리만큼 이동시키는 함수를 정의
     def shift(self, a, d):
         if a not in words:
             return a
         index = words.index(a)
         return words[(index + d) % len(words)]
 
-    # 평문을 암호화하는 함수를 정의
+    평문을 암호화하는 함수를 정의
     def encrypt(self, pt):
         ct = ""
         for i in range(len(pt)):
             ct += self.shift(pt[i], self._key[i % len(self._key)])
         return ct
 
-    # 암호문을 평문으로 복호화하는 함수를 정의
+    암호문을 평문으로 복호화하는 함수를 정의
     def decrypt(self, ct):
         pt = ""
         for i in range(len(ct)):
             pt += self.shift(ct[i], -self._key[i % len(self._key)])
         return pt
 
-# 주요 기능을 실행하는 함수
+주요 기능을 실행하는 함수
 def main():
     # 16개의 난수로 구성된 키를 생성
     key = [random.randint(0, len(words)) for _ in range(16)]
@@ -54,17 +54,18 @@ def main():
         secret = f.read()
         
     assert "Vigenere" and "cipher" in secret
-    # 생성한 키를 사용하여 Vigenere 객체를 생성
+    생성한 키를 사용하여 Vigenere 객체를 생성
     cipher = Vigenere(key)
-    # 평문을 암호화
+    평문을 암호화
     secret_enc = cipher.encrypt(secret)
-    # 암호화된 결과를 출력
+    암호화된 결과를 출력
     print(f"my encrypted sentence > {secret_enc}")
 
 if __name__ == '__main__':
     main()
 
 '''
+
 비즈네르 암호를 사용하여 주어진 평문을 암호화하는 코드인데.... output.txt도 살펴봐야 할 것 같다. 
 
 output.txt
