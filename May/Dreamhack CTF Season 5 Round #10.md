@@ -16,7 +16,7 @@
 import random  
 from string import ascii_lowercase, ascii_uppercase, digits  
 
-# 알파벳, 소문자, 대문자, 숫자를 포함하는 문자열을 생성
+// 알파벳, 소문자, 대문자, 숫자를 포함하는 문자열을 생성
 words = ascii_uppercase + ascii_lowercase + digits
 
 # 비즈네르 암호를 구현하는 클래스를 정의
