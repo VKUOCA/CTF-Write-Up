@@ -1,6 +1,6 @@
 # 3S CTF 2024 Write Up
 <br>
-**Forensics:
+Forensics:
 <br>
 ### Wat ch??
 - 첨부 파일: wat_ch_.zip
