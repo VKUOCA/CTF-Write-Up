@@ -1,5 +1,4 @@
 # 3S CTF 2024 Write Up
-<br>
 Forensics:
 <br>
 ### Wat ch??
