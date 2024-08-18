@@ -1,6 +1,11 @@
 # 3S CTF 2024 Write Up
 Forensics:
 <br>
+### CUTE_TIGER
+- 첨부 파일: README.pdf
+
+![image](https://github.com/user-attachments/assets/b099da2e-ea3f-4dd9-a71f-53e454fe4770)
+
 ### Wat ch??
 - 첨부 파일: wat_ch_.zip
 
